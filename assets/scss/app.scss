@@ -1,0 +1,166 @@
+/* custom stylesheet */
+@import 'variables';
+
+body{
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+.row{
+	max-width: 990px;
+}
+
+h1, h2, h3, h4, h5, h6{
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+}
+
+a{
+	font-family: 'Montserrat', sans-serif;	
+}
+
+/* top header */
+
+.topHeader{
+	background-color: $orange;
+	text-align: right;
+
+	h6{
+		font-size: 12px;
+		display: inline-block;
+		padding-left: 10px;
+		color: white;
+		padding-top: 3px;
+		padding-bottom: 3px;
+
+		a{
+			color: $grey;
+		}
+
+		a[target="phone"] {
+			display:inline-block;
+			line-height: 20px; /* check your icon height */
+			background:url(img/phone-icon-grey.png)  center left no-repeat;
+			padding-left: 20px;
+		} 
+
+		a[target="email"] {
+			display:inline-block;
+			line-height: 10px; /* check your icon height */
+			background:url(img/email-icon-grey.png)  center left no-repeat;
+			padding-left: 20px;
+		} 
+	}
+}
+
+/* header */
+header{
+	.top-bar{
+		background-color: transparent;
+		min-height: 70px;
+
+		.top-bar-section{
+			margin-top: 5px;
+
+			ul li{
+				background: none;
+
+				a{
+					font-family: 'Montserrat', sans-serif;
+					color: $grey;
+					text-transform: uppercase;
+					padding: 0px;
+
+					&:hover{
+						color: $orange;
+					}
+				}
+			}
+
+			li.home-menu{
+					background-image: url(img/home-icon.png);
+					background-position: center;
+					background-repeat: no-repeat;
+					display: block;
+					text-indent: -10000px;
+
+					&:hover{
+						background-image: url(img/home-icon-hover.png);
+					}
+				}
+
+			li.search-menu{
+					background-image: url(img/search-icon.png);
+					background-position: center;
+					background-repeat: no-repeat;
+					display: block;
+					text-indent: -10000px;
+
+					&:hover{
+						background-image: url(img/search-icon-hover.png);
+					}
+				}	
+
+			li:not(.has-form) a:not(.button){
+				background: none;
+			}
+
+			li.active:not(.has-form) a:not(.button){
+				color: $orange;
+				background-image: url(img/chevron-orange.png);
+				background-repeat: no-repeat;
+				background-position: left;
+				padding-right: 20px;
+
+				&:hover{
+					background-color: transparent;
+				}
+			}
+
+			ul li > a {
+			   display: inline;
+			}
+
+			ul.dropdown{
+				background-color: pink;
+				width: 100%;
+
+				li{
+					background-color: green;
+
+					a{
+						background: none;
+					}
+				}
+			}
+
+		}/* end top-bar-section */
+	}
+
+	.name{
+		width: 200px;
+	}
+
+	.logo{
+	display: block;
+	background-image: url(img/logo.png);
+	background-repeat: no-repeat;
+	height: 48px;
+	width: 200px;
+	text-indent: -100000px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	}
+
+}
+
+/* page Header */
+
+.pageHeader{
+	height: 200px;
+	background-color: $orange;
+}
+
+
+
+
