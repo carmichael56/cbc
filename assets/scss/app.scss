@@ -1,5 +1,6 @@
 /* custom stylesheet */
 @import 'variables';
+@import 'careers';
 
 body{
 	font-family: 'Montserrat', sans-serif;
@@ -13,8 +14,14 @@ body{
 h1, h2, h3, h4, h5, h6{
 	text-transform: uppercase;
 	font-family: 'Montserrat', sans-serif;
+	color: $orange;
+	line-height: 1.5rem;
 }
 
+p{
+	color: $charcoal;
+	line-height: 1.35rem;
+}
 a{
 	font-family: 'Montserrat', sans-serif;	
 }
@@ -60,10 +67,11 @@ header{
 		min-height: 70px;
 
 		.top-bar-section{
-			margin-top: 5px;
+			margin-top: 15px;
 
 			ul li{
 				background: none;
+				padding-left: 40px;
 
 				a{
 					font-family: 'Montserrat', sans-serif;
@@ -117,21 +125,14 @@ header{
 				}
 			}
 
-			ul li > a {
-			   display: inline;
-			}
+			.dropdown{
+				top:55px;
 
-			ul.dropdown{
-				background-color: pink;
-				width: 100%;
-
-				li{
-					background-color: green;
-
-					a{
-						background: none;
-					}
+				li.active:not(.has-form) a:not(.button){
+					background-image: none;
 				}
+
+
 			}
 
 		}/* end top-bar-section */
@@ -167,14 +168,177 @@ header{
 
 	.flag{
 		height: 60px;
-		background-color: $orange;
-		opacity: 0.5;
+		background-color: rgba(131,14,3,0.70);
 		vertical-align: middle;
 
 		h1{
 			color: #ffffff;
 		}
 	}
+}
+
+/* Footer */
+
+footer{
+	background-image: url(img/careers.png);
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: 100%;
+
+	.large-3{
+		padding: 0px;
+	}
+
+	.classicGroup{
+		display: block;
+		background-image: url(img/classic-group-logo.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 40%;
+		text-indent: -10000px;
+		height: 120px;
+		border-right: 2px solid #fff;
+	}
+
+	.classicBuilders{
+		display: block;
+		background-image: url(img/classic-builders-logo.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 30%;
+		text-indent: -10000px;
+		height: 120px;
+		border-right: 2px solid #fff;
+	}
+
+	.cbcContruction{
+		display: block;
+		background-color: $orange;
+		background-image: url(img/cbc-logo.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 40%;
+		text-indent: -10000px;
+		height: 120px;
+		border-right: 2px solid #fff;
+	}
+
+	.classicDevelopment{
+		display: block;
+		background-image: url(img/classic-development.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 40%;
+		text-indent: -10000px;
+		height: 120px;
+	}
+
+	.footerDetails{
+		background-color: #000000;
+		min-width: 30px;
+		border-top: 3px solid #ffffff;
+		color: #ffffff;
+		padding-top: 15px;
+		padding-bottom: 15px;
+
+		p{
+			font-size: 10px;
+			text-transform: uppercase;
+			margin-bottom: 0px;
+			color: #ffffff;
+			line-height: 1.2rem;
+		}
+	}
+
+	.copyright{
+		background-color: $charcoal;
+		color: #ffffff;
+		text-align: right;
+		padding-top: 10px;
+		
+		p{
+			font-size: 8px;
+			text-transform: uppercase;
+		}
+	}
+
+	.contacts{
+		padding-right: 0px;
+		text-align: right;
+		padding-top: 10px;
+
+
+			a{	display: block;
+				font-size: 11px;
+				padding-left: 10px;
+				color: white;
+				padding-top: 0px;
+				padding-bottom: 0px;
+				text-align: right;
+				margin-bottom: 0px;
+				color: #ffffff;
+
+
+				&:hover{
+					color:$orange;
+				}
+			}
+
+			a[target="phone"] {
+				display:inline-block;
+				line-height: 20px; /* check your icon height */
+				background:url(img/phone-icon-white.png)  center left no-repeat;
+				padding-left: 20px;
+			} 
+
+			a[target="email"] {
+				display:inline-block;
+				line-height: 10px; /* check your icon height */
+				background:url(img/email-icon-white.png)  center left no-repeat;
+				padding-left: 20px;
+			} 
+	}
+}
+
+.contacts{
+		padding-right: 0px;
+		text-align: right;
+
+
+			a{	display: block;
+				font-size: 11px;
+				padding-left: 10px;
+				color: white;
+				padding-top: 0px;
+				padding-bottom: 0px;
+				text-align: right;
+				margin-bottom: 0px;
+				color: #ffffff;
+
+
+				&:hover{
+					color:$orange;
+				}
+			}
+
+			a[target="phone"] {
+				display:inline-block;
+				line-height: 20px; /* check your icon height */
+				background:url(img/phone-icon-white.png)  center left no-repeat;
+				padding-left: 20px;
+			} 
+
+			a[target="email"] {
+				display:inline-block;
+				line-height: 10px; /* check your icon height */
+				background:url(img/email-icon-white.png)  center left no-repeat;
+				padding-left: 20px;
+			} 
+	}
+
+.mainContent{
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 
