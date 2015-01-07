@@ -159,6 +159,22 @@ header{
 .pageHeader{
 	height: 200px;
 	background-color: $orange;
+	padding-top: 80px;
+
+	img{
+		top: -50px!important;
+	}
+
+	.flag{
+		height: 60px;
+		background-color: $orange;
+		opacity: 0.5;
+		vertical-align: middle;
+
+		h1{
+			color: #ffffff;
+		}
+	}
 }
 
 
