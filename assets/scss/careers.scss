@@ -1,8 +1,20 @@
 article#careers{
 
+	.topContent{
+		margin-bottom: 30px;
+
+		.pageImg{
+
+			img{
+				width: 100%;
+			}
+		}	
+	}
+
 	h4,h5{
 		margin-bottom: 0px;
 	}
+
 	.contacts{
 		text-align: left;
 
@@ -13,39 +25,26 @@ article#careers{
 		}
 
 		a[target="phone"] {
-				display:inline-block;
-				line-height: 30px; /* check your icon height */
-				background:url(img/phone-icon-orange.png)  center left no-repeat;
-				padding-left: 40px;
-			} 
+			display:inline-block;
+			line-height: 30px; /* check your icon height */
+			background:url(img/phone-icon-orange.png)  center left no-repeat;
+			padding-left: 40px;
+		} 
 
-			a[target="email"] {
-				display:inline-block;
-				line-height: 30px; /* check your icon height */
-				background:url(img/email-icon-orange.png)  center left no-repeat;
-				padding-left: 40px;
-			} 
+		a[target="email"] {
+			display:inline-block;
+			line-height: 30px; /* check your icon height */
+			background:url(img/email-icon-orange.png)  center left no-repeat;
+			padding-left: 40px;
+		} 
+}
+
+	.job-Item{
+		min-height: 50px;
+		border-bottom: 1px solid #cccccc;
+		margin-bottom: 30px;
 	}
 
-	.jobList{
-		padding-top: 30px;
+	
 
-		ul{
-			margin-right: 0px;
-
-			li{
-				list-style: none;
-				border-bottom: 2px solid #cccccc;
-				padding-bottom: 10px;
-				min-height: 60px;
-
-				.listLeft{
-					background-image: url(img/chevron-black-list.png);
-					background-position: left;
-					background-repeat: no-repeat;
-					height: 50px;
-				}
-			}
-		}
-	}
 }

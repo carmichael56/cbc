@@ -7,21 +7,42 @@ body{
 
 }
 
+strong{
+	font-weight: 700;
+}
+
 .row{
 	max-width: 990px;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 h1, h2, h3, h4, h5, h6{
 	text-transform: uppercase;
 	font-family: 'Montserrat', sans-serif;
 	color: $orange;
-	line-height: 1.5rem;
+	line-height: 1.7rem;
+	margin-bottom: 0px;
+}
+
+h1{
+	font-size: 22px;
+}
+
+h2{
+	font-size: 16px;
+}
+
+.subheading1{
+	margin-bottom: 30px;
 }
 
 p{
 	color: $charcoal;
 	line-height: 1.35rem;
+	font-size: 12px;
 }
+
 a{
 	font-family: 'Montserrat', sans-serif;	
 }
@@ -71,7 +92,7 @@ header{
 
 			ul li{
 				background: none;
-				padding-left: 40px;
+				padding-left: 20px;
 
 				a{
 					font-family: 'Montserrat', sans-serif;
@@ -83,6 +104,10 @@ header{
 						color: $orange;
 					}
 				}
+			}
+
+			.top-bar-section .has-dropdown > a:after{
+				display: none;
 			}
 
 			li.home-menu{
@@ -158,21 +183,23 @@ header{
 /* page Header */
 
 .pageHeader{
-	height: 200px;
+	height: 170px;
 	background-color: $orange;
-	padding-top: 80px;
+	padding-top: 35px;
 
 	img{
 		top: -50px!important;
 	}
 
 	.flag{
-		height: 60px;
+		height: 100px;
 		background-color: rgba(131,14,3,0.70);
 		vertical-align: middle;
 
 		h1{
+			font-size: 48px;
 			color: #ffffff;
+			padding-top: 35px;
 		}
 	}
 }
@@ -187,6 +214,10 @@ footer{
 
 	.large-3{
 		padding: 0px;
+	}
+
+	a:hover{
+		background-color: $orange;
 	}
 
 	.classicGroup{
@@ -213,7 +244,6 @@ footer{
 
 	.cbcContruction{
 		display: block;
-		background-color: $orange;
 		background-image: url(img/cbc-logo.png);
 		background-repeat: no-repeat;
 		background-position: center;
@@ -337,9 +367,49 @@ footer{
 	}
 
 .mainContent{
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-top: 60px;
+	padding-bottom: 70px;
+
 }
+
+
+.button {
+	background-color: #ffffff;
+	border: 1px solid $orange;
+	color: $orange;
+	padding:7px;
+	min-width: 100px;
+	text-transform: uppercase;
+	font-size: 12px;
+
+	&:hover{
+		background-color:$orange;
+	}
+}
+
+.chevronTitle{
+		background-image: url(img/chevron-black-list.png);
+		background-position: left;
+		background-position: 0px 5px;
+		background-repeat: no-repeat;
+		padding-bottom: 40px;
+		padding-left: 20px;
+
+		.pTitle{
+			margin-top: 10px;
+			font-weight: 700;
+			font-size: 14px;
+			text-transform: uppercase;
+			margin-bottom: 0px;
+		}
+
+		.pSubtitle{
+			text-transform: uppercase;
+			font-size: 14px;
+		}
+}
+
+
 
 
 
