@@ -1,6 +1,7 @@
 /* custom stylesheet */
 @import 'variables';
 @import 'careers';
+@import 'key-personnel';
 
 body{
 	font-family: 'Montserrat', sans-serif;
@@ -396,7 +397,6 @@ footer{
 		padding-left: 20px;
 
 		.pTitle{
-			margin-top: 10px;
 			font-weight: 700;
 			font-size: 14px;
 			text-transform: uppercase;

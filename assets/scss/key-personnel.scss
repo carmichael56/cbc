@@ -1,0 +1,42 @@
+.mainContent{
+
+	.topContent{
+		margin-bottom: 30px;
+		
+		.contentLeft,{
+			padding-left: 0px;
+		}
+	}
+
+	#directors{
+		background-image: url(img/directors.jpg);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: 0px -50px;
+		min-height: 500px;
+		display: block;
+
+		.backstretch{
+			img{
+				top: -50px!important;
+			}
+		}
+
+		.bottomContent{
+			padding-top: 200px;
+			
+
+			.bgContent{
+				background-color: rgba(255,255,255,0.8);
+				padding-top: 30px;
+				min-height: 500px;
+
+				.chevronTitle{
+					padding-bottom: 10px;
+				}	
+			}
+		}
+	}/* end of directors */
+
+	
+}
