@@ -19,72 +19,59 @@
   <script src="assets/js/vendor/modernizr.js"></script>
 
 </head>
-<body>
+<body class="row">
+<div id="pageContainer" class="small-12 columns">
 
-  <div class="topHeader">
-    <div class="row">
-      <div class="large-12">
-        <h6>CBC Construction</h6>
-        <h6><a href="+64 7 578 6160" target="phone">+64 7 578 6160</a></h6>
-        <h6><a href="mailto:info@cbccontruction.co.nz" target="email">info@cbccontruction.co.nz</a></h6>
-      </div>
+    <header class="small-12 columns">
+        <div id="topHeader" class="small-12 columns">
+            <div class="right">
+                <h6>CBC Construction</h6>
+                <h6><a href="+64 7 578 6160" target="phone">+64 7 578 6160</a></h6>
+                <h6><a href="mailto:info@cbccontruction.co.nz" target="email">info@cbccontruction.co.nz</a></h6>
+            </div>
+        </div>
+        <div id="navigationContainer" class="small-12 columns">
+            <h1><a href="#" class="logo"></a></h1>
+            <nav role="navigation" class="top-bar">
+                <!-- Right Nav Section -->
+                <ul class="right inline-list">
+                    <li class="toggle-topbar menu-icon hide"><a href="#"><span>Menu</span></a></li>
+                    <li class="home-menu"><a href="#"><span>Home</span></a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li class="active has-dropdown">
+                        <a href="#">About</a>
+                        <div class="submenu hide">
+                            <ul class="dropdown inline-list">
+                                <li><a href="#">Key Personnel</a></li>
+                                <li><a href="#">Clients & Testimonials</a></li>
+                                <li><a href="#">Careers</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="pageHeader small-12 columns">
+        <div class="flag">
+            <div class="row">
+                <h1>Careers</h1>
+            </div>
+        </div>
+
     </div>
-  </div>
-
-  <header>
-
-  <nav class="row top-bar" data-topbar role="navigation">
-      <ul class="title-area">
-        <li class="name">
-          <h1><a href="#" class="logo"></a></h1>
-        </li>
-         <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-      </ul>
-
-      <section class="top-bar-section">
-        <!-- Right Nav Section -->
-        <ul class="right">
-          <li class="home-menu"><a href="#">Home</a></li>
-          <li><a href="#">Projects</a></li>
-          <li class="active has-dropdown">
-            <a href="#">About</a>
-            <ul class="dropdown">
-              <li><a href="#">About</a></li>
-              <li><a href="#">Health & Safety</a></li>
-              <li><a href="#">Awards</a></li>
-              <li><a href="#">Key Personnel</a></li>
-              <li><a href="#">Clients & Testimonials</a></li>
-              <li><a href="#">Careers</a></li>
-            </ul>
-          </li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
-          <li class="search-menu"><a href="#">Search</a></li>
-        </ul>
-      </section>
-
-    </nav>
-
-  </header>
-
-  <div class="pageHeader">
-    <div class="flag">
-      <div class="row">
-        <h1>Careers</h1>
-      </div>
-    </div>
-    
-  </div>
 
   <!-- body content here -->
-  <article class="mainContent" id="careers">
-    <div class="row topContent">
-      <div class="medium-6 large-6 columns pageImg">
+  <article class="mainContent row collapse " id="careers">
+    <div class="small-12 columns">
+      <div class="small-12 medium-6 columns pageImg">
         <img src="assets/css/img/careers-img.jpg">
       </div>
-      <div class="medium-6 large-6 columns">
+      <div class="small-12 medium-6 large-6 columns">
         <h1>CBC Construction don’t just have a reputation for building award-winning structures.</h1>
         <h2 class="subheading1">they are pretty good at building great careers too.</h2>
 
@@ -95,19 +82,18 @@
           </br>
           <a href="mailto:info@cbccontruction.co.nz" target="email">info@cbccontruction.co.nz</a>
         </div>
-      
       </div>
     </div>
 
-    <div class="row job-Item ">
-       <div class="medium-6 large-6 columns chevronTitle">
+    <div class="small-12 columns">
+       <div class="small-12 medium-6 large-6 columns chevronTitle">
         <p class="pTitle">Job Title</p>
          <p class="pSubtitle">
           Say a little something to promote the role in you company.
         </p> 
        </div> 
 
-       <div class="medium-6 large-6 columns right">
+       <div class="small-12 medium-6 large-6 columns right">
         <p>
           A more detailed explanation of what the job entails. This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. 
         </p>
@@ -118,87 +104,26 @@
 
     </div><!-- end of job item -->
 
-    <div class="row job-Item ">
-       <div class="medium-6 large-6 columns chevronTitle">
-        <p class="pTitle">Job Title</p>
-         <p class="pSubtitle">
-          Say a little something to promote the role in you company.
-        </p> 
-       </div> 
 
-       <div class="medium-6 large-6 columns right">
-        <p>
-          A more detailed explanation of what the job entails. This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. 
-        </p>
-
-        <a href="#" class="button">Apply</a>
-
-      </div> 
-
-    </div><!-- end of job item -->
-
-    <div class="row job-Item ">
-       <div class="medium-6 large-6 columns chevronTitle">
-        <p class="pTitle">Job Title</p>
-         <p class="pSubtitle">
-          Say a little something to promote the role.
-        </p> 
-       </div> 
-
-       <div class="medium-6 large-6 columns right">
-        <p>
-          A more detailed explanation of what the job entails. This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. 
-        </p>
-
-        <a href="#" class="button">Apply</a>
-
-      </div> 
-
-    </div><!-- end of job item -->
 
   </article>
 
-  <footer class="footerBg">
-    <div class="row">
-      <div class="small-6 medium-3 large-3 columns " >
-        <a href="#" class="classicGroup"></a>
+  <footer class="small-12 columns">
+      <div class="medium-3 columns">
+          <img src="//placehold.it/100x100">
       </div>
-
-      <div class="small-6 medium-3 large-3 columns ">
-        <a href="#" class="classicBuilders"></a>
-      </div>
-
-      <div class="small-6 medium-3 large-3 columns ">
-        <a href="#" class="cbcContruction"></a>
-      </div>
-
-      <div class="small-6 medium-3 large-3 columns ">
-        <a href="#" class="classicDevelopment"></a>
-      </div>
-      
-    </div><!-- end of row -->
-
-    <div class="footerDetails">
-      <div class="row">
-        <div class="large-6 columns mission">
+      <div class="medium-5 columns">
           <p>Classic Group Mission</p>
-          <p><strong>To have the bestreputation & be the most</p> 
+          <p><strong>To have the bestreputation & be the most</p>
           <p>trusted building company in New Zealand</strong></p>
-        </div>
-        
-        <div class="large-6 columns contacts">
+      </div>
+
+      <div class="medium-4 columns" >
           <a href="+64 7 578 6160" target="phone">+64 7 578 6160</a>
           </br>
           <a href="mailto:info@cbccontruction.co.nz" target="email">info@cbccontruction.co.nz</a>
-        </div>
-      </div><!-- end of row -->
-    </div><!-- end of footerDetails -->
-
-    <div class="copyright">
-      <div class="row">
-        <p>Copyright &#169 Classic Builders 2015</p>    
       </div>
-    </div>
+
   </footer>
 
 

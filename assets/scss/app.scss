@@ -5,7 +5,7 @@
 
 body{
 	font-family: 'Montserrat', sans-serif;
-
+	background-color: #333333;
 }
 
 strong{
@@ -14,8 +14,6 @@ strong{
 
 .row{
 	max-width: 990px;
-	padding-left: 30px;
-	padding-right: 30px;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -53,10 +51,13 @@ p{
 a{
 	font-family: 'Montserrat', sans-serif;	
 }
-
+#pageContainer{
+  background-color: #FFFFFF;
+  padding: 0 ;
+}
 /* top header */
 
-.topHeader{
+#topHeader{
 	background-color: $orange;
 	text-align: right;
 
@@ -90,84 +91,76 @@ a{
 
 /* header */
 header{
-	.top-bar{
+  	padding: 0 !important;
+  	margin: 0 !important;
+
+  	#navigationContainer{
+	  h1{
+		display: inline-block;
+	  }
+	  nav{
 		background-color: transparent;
 		min-height: 70px;
 
-		.top-bar-section{
-			margin-top: 15px;
+		display: inline-block;
+		position: relative;
+		top:30px;
+		width: 70%;
+		float:right;
+		height:78px;
 
-			ul li{
-				background: none;
-				padding-left: 20px;
+		ul li{
+		  background: none;
+		  padding-left: 20px;
 
-				a{
-					font-family: 'Montserrat', sans-serif;
-					color: $grey;
-					text-transform: uppercase;
-					padding: 0px;
+		  a{
+			font-family: 'Montserrat', sans-serif;
+			color: $grey;
+			text-transform: uppercase;
+			padding: 0px;
 
-					&:hover{
-						color: $orange;
-					}
-				}
+			&:hover{
+			  color: $orange;
 			}
+		  }
+		}
 
-			.top-bar-section .has-dropdown > a:after{
-				display: none;
-			}
+		li.home-menu{
+		  background-image: url(img/home-icon.png);
+		  background-position: center;
+		  background-repeat: no-repeat;
+		  display: block;
+		  text-indent: -10000px;
 
-			li.home-menu{
-					background-image: url(img/home-icon.png);
-					background-position: center;
-					background-repeat: no-repeat;
-					display: block;
-					text-indent: -10000px;
+		  &:hover{
+			background-image: url(img/home-icon-hover.png);
+		  }
+		}
+		li:not(.has-form) a:not(.button){
+		  background: none;
+		}
 
-					&:hover{
-						background-image: url(img/home-icon-hover.png);
-					}
-				}
+		li.active:not(.has-form) a:not(.button){
+		  color: $orange;
+		  background-image: url(img/chevron-orange.png);
+		  background-repeat: no-repeat;
+		  background-position: left;
+		  padding-right: 20px;
 
-			li.search-menu{
-					background-image: url(img/search-icon.png);
-					background-position: center;
-					background-repeat: no-repeat;
-					display: block;
-					text-indent: -10000px;
+		  &:hover{
+			background-color: transparent;
+		  }
+		}
 
-					&:hover{
-						background-image: url(img/search-icon-hover.png);
-					}
-				}	
+		.dropdown{
+		  top:55px;
 
-			li:not(.has-form) a:not(.button){
-				background: none;
-			}
+		  li.active:not(.has-form) a:not(.button){
+			background-image: none;
+		  }
 
-			li.active:not(.has-form) a:not(.button){
-				color: $orange;
-				background-image: url(img/chevron-orange.png);
-				background-repeat: no-repeat;
-				background-position: left;
-				padding-right: 20px;
-
-				&:hover{
-					background-color: transparent;
-				}
-			}
-
-			.dropdown{
-				top:55px;
-
-				li.active:not(.has-form) a:not(.button){
-					background-image: none;
-				}
-
-
-			}
-
-		}/* end top-bar-section */
+		}
+	  }
 	}
 
 	.name{
@@ -190,9 +183,11 @@ header{
 /* page Header */
 
 .pageHeader{
+	padding: 0 !important;
+	margin: 0 !important;
 	height: 170px;
 	background-color: $orange;
-	padding-top: 35px;
+	padding-top: 35px !important;
 
 	img{
 		top: -50px!important;
@@ -377,6 +372,11 @@ footer{
 	padding-top: 60px;
 	padding-bottom: 70px;
 
+}
+
+.content{
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 

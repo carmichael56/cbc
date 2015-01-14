@@ -19,68 +19,55 @@
   <script src="assets/js/vendor/modernizr.js"></script>
 
 </head>
-<body>
+<body class="row">
+<div id="pageContainer" class="small-12 columns">
 
-  <div class="topHeader">
-    <div class="row">
-      <div class="large-12">
+  <header class="small-12 columns">
+    <div id="topHeader" class="small-12 columns">
+      <div class="right">
         <h6>CBC Construction</h6>
         <h6><a href="+64 7 578 6160" target="phone">+64 7 578 6160</a></h6>
         <h6><a href="mailto:info@cbccontruction.co.nz" target="email">info@cbccontruction.co.nz</a></h6>
       </div>
     </div>
-  </div>
-
-  <header>
-
-  <nav class="row top-bar" data-topbar role="navigation">
-      <ul class="title-area">
-        <li class="name">
-          <h1><a href="#" class="logo"></a></h1>
-        </li>
-         <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-      </ul>
-
-      <section class="top-bar-section">
+    <div id="navigationContainer" class="small-12 columns">
+      <h1><a href="#" class="logo"></a></h1>
+      <nav role="navigation" class="top-bar">
         <!-- Right Nav Section -->
-        <ul class="right">
-          <li class="home-menu"><a href="#">Home</a></li>
+        <ul class="right inline-list">
+          <li class="toggle-topbar menu-icon hide"><a href="#"><span>Menu</span></a></li>
+          <li class="home-menu"><a href="#"><span>Home</span></a></li>
           <li><a href="#">Projects</a></li>
           <li class="active has-dropdown">
             <a href="#">About</a>
-            <ul class="dropdown">
-              <li><a href="#">About</a></li>
-              <li><a href="#">Health & Safety</a></li>
-              <li><a href="#">Awards</a></li>
-              <li><a href="#">Key Personnel</a></li>
-              <li><a href="#">Clients & Testimonials</a></li>
-              <li><a href="#">Careers</a></li>
-            </ul>
+            <div class="submenu hide">
+              <ul class="dropdown inline-list">
+                <li><a href="#">Key Personnel</a></li>
+                <li><a href="#">Clients & Testimonials</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+            </div>
           </li>
           <li><a href="#">News</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="#">Contact</a></li>
-          <li class="search-menu"><a href="#">Search</a></li>
         </ul>
-      </section>
-
-    </nav>
-
+      </nav>
+    </div>
   </header>
 
-  <div class="pageHeader">
+  <div class="pageHeader small-12 columns">
     <div class="flag">
-      <div class="row">
+      <div class="flagTitle">
         <h1>About</h1>
       </div>
     </div>
-    
+
   </div>
 
   <!-- body content here -->
-  <article class="mainContent" id="about">
-    <div class="row topContent">
+  <article class="mainContent small-12 columns" id="about">
+    <div class="row content">
       <h1 class=" medium-12 large-10">CBC CONSTRUCTION – CAPABILITY WITH CARE</h1>
       <h2 class="medium-12 large-10 subheading1">Since its inception in 2006, CBC Construction has become a highly-respected
 face within New Zealand’s commercial construction industry.</h2>
@@ -136,49 +123,23 @@ face within New Zealand’s commercial construction industry.</h2>
       
   </article>
 
-  <footer class="footerBg">
-    <div class="row">
-      <div class="small-6 medium-3 large-3 columns " >
-        <a href="#" class="classicGroup"></a>
-      </div>
-
-      <div class="small-6 medium-3 large-3 columns ">
-        <a href="#" class="classicBuilders"></a>
-      </div>
-
-      <div class="small-6 medium-3 large-3 columns ">
-        <a href="#" class="cbcContruction"></a>
-      </div>
-
-      <div class="small-6 medium-3 large-3 columns ">
-        <a href="#" class="classicDevelopment"></a>
-      </div>
-      
-    </div><!-- end of row -->
-
-    <div class="footerDetails">
-      <div class="row">
-        <div class="large-6 columns mission">
-          <p>Classic Group Mission</p>
-          <p><strong>To have the bestreputation & be the most</p> 
-          <p>trusted building company in New Zealand</strong></p>
-        </div>
-        
-        <div class="large-6 columns contacts">
-          <a href="+64 7 578 6160" target="phone">+64 7 578 6160</a>
-          </br>
-          <a href="mailto:info@cbccontruction.co.nz" target="email">info@cbccontruction.co.nz</a>
-        </div>
-      </div><!-- end of row -->
-    </div><!-- end of footerDetails -->
-
-    <div class="copyright">
-      <div class="row">
-        <p>Copyright &#169 Classic Builders 2015</p>    
-      </div>
+  <footer class="small-12 columns">
+    <div class="medium-3 columns">
+      <img src="//placehold.it/100x100">
     </div>
-  </footer>
+    <div class="medium-5 columns">
+      <p>Classic Group Mission</p>
+      <p><strong>To have the bestreputation & be the most</p>
+      <p>trusted building company in New Zealand</strong></p>
+    </div>
 
+    <div class="medium-4 columns" >
+      <a href="+64 7 578 6160" target="phone">+64 7 578 6160</a>
+      </br>
+      <a href="mailto:info@cbccontruction.co.nz" target="email">info@cbccontruction.co.nz</a>
+    </div>
+
+  </footer>
 
   <script src="assets/js/vendor/jquery.js"></script>
   <script src="assets/js/foundation.min.js"></script>
