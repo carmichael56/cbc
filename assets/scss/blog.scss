@@ -1,0 +1,47 @@
+#blog{
+
+	.chevronTitle{
+		height: auto;
+		display: block;
+	}
+	.h1{
+		font-size: 32px;
+		color: $grey;
+	}
+
+	.blogItem{
+
+		.blogContent{
+			border-bottom: 2px solid #cccccc;
+			margin-bottom: 30px;
+
+			.blogImage{
+				margin-bottom: 30px;
+			}
+		}
+	}
+
+	.categories, .search, .recentComments{
+		h4{
+			color:#bbbbbb;
+			border-bottom: 2px solid #bbbbbb;
+			margin-bottom: 10px;
+			padding-bottom: 10px;
+		}
+	}
+
+	.categories{
+		ul{
+			margin-left: 0px;
+			li{ 
+				list-style: none;
+				font-size: 12px;
+				line-height: 1.2rem;
+				a{
+					color: $grey;
+					text-transform: uppercase;					
+				}	
+			}
+		}
+	}
+}

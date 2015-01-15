@@ -4,6 +4,7 @@
 @import 'careers';
 @import 'key-personnel';
 @import 'testimonials';
+@import 'blog';
 
 body{
 	font-family: 'Montserrat', sans-serif;
@@ -436,6 +437,15 @@ footer{
 	line-height: 2rem;
 }
 
+.readMore{
+	color: #cccccc;
+	margin-top: -30px;
+	text-transform: uppercase;
+
+	&:hover{
+		color:$grey;
+	}
+}
 
 
 
