@@ -1,7 +1,9 @@
 /* custom stylesheet */
 @import 'variables';
+@import 'about';
 @import 'careers';
 @import 'key-personnel';
+@import 'testimonials';
 
 body{
 	font-family: 'Montserrat', sans-serif;
@@ -14,6 +16,8 @@ strong{
 
 .row{
 	max-width: 990px;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -30,6 +34,18 @@ h1{
 
 h2{
 	font-size: 16px;
+}
+
+h3{
+	font-style: 14px!important;
+}
+
+h4{
+	font-size: 12px;
+}
+
+h5{
+	font-style: 10px;
 }
 
 .subheading1{
@@ -54,6 +70,7 @@ a{
 #pageContainer{
   background-color: #FFFFFF;
   padding: 0 ;
+  z-index: -100;
 }
 /* top header */
 
@@ -372,11 +389,6 @@ footer{
 	padding-top: 60px;
 	padding-bottom: 70px;
 
-}
-
-.content{
-	padding-left: 30px;
-	padding-right: 30px;
 }
 
 

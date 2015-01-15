@@ -1,0 +1,91 @@
+#testimonials{
+
+	.chevronTitle{
+		padding-top: 10px;
+		padding-bottom: 20px;
+	}
+
+	.containerImg{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.testimonialLeft{
+
+		.imgSmall{
+			width: 50%;
+			padding: 5px;
+			float: left;
+		}
+
+		.imgLarge{
+			width: 100%;
+			padding: 5px;
+		}
+	}
+
+	.testimonialRight{
+		.chevronTitle{
+			margin-top: 15px;
+			padding-left: 15px;
+			padding-right: 5px;
+		}
+
+	}
+	.innerContainer{
+		padding: 5px;
+	}
+	.testimonialImg{
+		min-height: 460px;
+		position: 5px;
+
+		.bgImageLeft{
+			padding: 3px;
+			min-height: 460px;
+
+			img{
+				position: absolute;
+				z-index: -1;
+
+			}
+			.displayText{
+				margin: 20px;
+				color: #ffffff;
+				border-color: #ffffff;
+			}
+		}
+		.bgImageRight{
+			padding: 3px;
+			min-height: 460px;
+			padding: 25px;
+
+			img{
+				position: absolute;
+				z-index: -1;
+
+			}
+
+			.chevronTitle{
+				background-image: url(img/chevron-white-list.png);
+			}
+
+			h1,h2,p{
+				color: #ffffff;
+			}
+
+		}
+	}
+
+	.bottomTestimonial{
+		padding-top: 30px;
+
+		.jobItem{
+			padding-right: 5px;
+			padding-left: 5px;
+
+			.large-8{
+				padding: 0px;
+			}
+		}
+	}
+}
