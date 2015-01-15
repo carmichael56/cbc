@@ -1,4 +1,21 @@
-#blog{
+
+/* in case script does not load */
+.cycle-slideshow img:first-child {
+    position: static; z-index: 100;
+}
+
+/* pager */
+.cycle-pager { 
+    text-align: center; width: 100%; z-index: 500; position: absolute; top: 10px; overflow: hidden; margin-top: -30px;
+}
+.cycle-pager span { 
+    font-family: arial; font-size: 70px; width: 25px; height: 25px; top: -15px;
+    display: inline-block; color: rgba(255,255,255,0.6); cursor: pointer; 
+}
+.cycle-pager span.cycle-pager-active { color: rgba(255,255,255,0.9); border:1px;}
+.cycle-pager > * { cursor: pointer;}
+
+#blog, #blogFull{
 
 	.chevronTitle{
 		height: auto;
@@ -91,6 +108,91 @@
 
 	img{
 		width: 100%;
+		padding-bottom: 30px;
 	}
 
+	.blogContent{
+		border-bottom: 2px solid #cccccc;
+	}
+
+	.comments{
+		padding-top: 30px;
+
+
+		.commentItem{
+			background-image: url(img/chevron-black-list.png);
+			background-repeat: no-repeat;
+			padding-left: 20px;
+			margin-left: 20px;
+			margin-top: 15px;
+
+			p{
+				margin-bottom: 0px;
+			}
+
+			.commentDetails{
+				color: #bbbbbb;
+				font-size: 11px;
+
+				a{
+					color: $orange;
+
+					&:hover{
+						color:$grey;
+					}
+				}
+			}
+		.commentReply{
+				margin-left: 30px;
+				border-top: 1px solid #cccccc;
+				padding-top: 5px;
+				margin-top: 5px;
+
+				.last{
+					border-bottom: 1px solid #cccccc;
+				padding-top: 5px;
+				margin-top: 5px;
+				}
+			}
+		}
+
+		.leaveComment{
+			h2{
+				padding-top: 25px;
+				padding-left: 25px;
+				padding-bottom: 15px; 
+			}
+
+			background-color: #e9e9ea;
+			margin-top: 30px;
+
+			span{
+				color: $orange;
+			}
+
+			label{
+				text-transform: uppercase;
+			}
+
+			textarea{
+				min-height: 100px;
+			}
+
+			.button{
+				margin-left: 32px;
+				display: inline-block;
+				vertical-align: top;
+			}
+
+			.required{
+				display: inline-block;
+				text-transform: uppercase;
+				color: #bbbbbb;
+				margin-left: 32px;
+				line-height: 1rem;
+				font-size: 11px;
+			}
+
+		}
+	}
 }
