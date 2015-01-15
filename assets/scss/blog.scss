@@ -15,7 +15,7 @@
 .cycle-pager span.cycle-pager-active { color: rgba(255,255,255,0.9); border:1px;}
 .cycle-pager > * { cursor: pointer;}
 
-#blog, #blogFull{
+#blog, #blogFull, #news, #newsFull{
 
 	.chevronTitle{
 		height: auto;
@@ -100,7 +100,7 @@
 	}
 }
 
-#blogFull{
+#blogFull, #newsFull{
 	.subheading1{
 				color: $orange;
 				text-transform: uppercase;
@@ -194,5 +194,15 @@
 			}
 
 		}
+	}
+}
+
+#newsFull{
+	.blogContent{
+		border-bottom: none;
+	}
+
+	.comments{
+		padding-top: 5px;
 	}
 }
