@@ -6,6 +6,7 @@
 @import 'key-personnel';
 @import 'testimonials';
 @import 'blog';
+@import 'contact';
 
 body{
 	font-family: 'Montserrat', sans-serif;
@@ -72,7 +73,7 @@ a{
 #pageContainer{
   background-color: #FFFFFF;
   padding: 0 ;
-  z-index: -100;
+  z-index: 0;
 }
 /* top header */
 
@@ -161,10 +162,7 @@ header{
 
 		li.active:not(.has-form) a:not(.button){
 		  color: $orange;
-		  background-image: url(img/chevron-orange.png);
-		  background-repeat: no-repeat;
-		  background-position: left;
-		  padding-right: 20px;
+
 
 		  &:hover{
 			background-color: transparent;
@@ -446,6 +444,18 @@ footer{
 	&:hover{
 		color:#aaaaaa;
 	}
+}
+
+.site-padding{
+  padding-left:30px !important;
+  padding-right: 30px !important;
+}
+
+header #navigationContainer nav li.active:not(.has-form){
+	background-image: url(img/chevron-orange.png);
+	background-repeat: no-repeat;
+	background-position: 3% 20%;
+
 }
 
 

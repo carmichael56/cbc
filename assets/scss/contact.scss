@@ -1,0 +1,99 @@
+#contact{
+	.row{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.form{
+		background-color: #e9e9ea;
+		margin-left: 30px;
+		margin-right: 30px;
+		padding: 10px;
+		padding-top: 20px;
+
+
+		form{
+			
+			label{
+				text-transform: uppercase;
+			}
+
+			span{
+				color: $orange;
+			}
+			
+			textarea{
+				min-height: 120px;
+			}
+
+			.button{
+				vertical-align: top;
+				float: left;
+			}
+
+			.required{
+				display: inline-block;
+				text-transform: uppercase;
+				color: #bbbbbb;
+				line-height: 1rem;
+				font-size: 10px;
+				float: right;
+			}
+		}
+	}
+
+	.details{
+		padding-top: 220px;
+		p{
+			margin-bottom: 0px;
+		}
+	}
+
+	.contactDetails{
+		background-color: $orange;
+		margin-top: 10px;
+		padding: 20px;
+
+		a{
+			color: #ffffff;
+		}
+
+		a[target="phone"] {
+			display:inline-block;
+			line-height: 20px; /* check your icon height */
+			background:url(img/phone-icon-white.png)  center left no-repeat;
+			background-size: 15%;
+			padding-left: 25px;
+
+		} 
+
+		a[target="fax"] {
+			display:inline-block;
+			line-height: 20px; /* check your icon height */
+			background:url(img/fax-icon-white.png)  center left no-repeat;
+			background-size: 15%;
+			padding-left: 25px;
+		} 
+
+		a[target="email"] {
+			display:inline-block;
+			line-height: 15px; /* check your icon height */
+			background:url(img/email-icon-white.png)  center left no-repeat;
+			background-size: 7%;
+			padding-left: 25px;
+		} 
+	}
+
+}
+
+	.map{
+		margin-top: 30px;
+		margin-bottom: 60px;
+		padding-left: -14px;
+		height: 250px;
+		overflow: hidden;
+
+		iframe{
+			width: 100%;
+
+		}
+	}
