@@ -1,0 +1,184 @@
+.slideshow{
+/*
+    these are just the default styles used in the Cycle2 demo pages.  
+    you can use these styles or any others that you wish.
+*/
+
+
+/* set border-box so that percents can be used for width, padding, etc (personal preference) */
+.cycle-slideshow, .cycle-slideshow * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+h1{
+	color: #ffffff;
+	font-size: 3rem;
+	line-height: 3rem;
+	text-shadow: 3px 3px 10px #666666;
+}
+
+h3{
+	color: #ffffff;
+	font-size: 1rem;
+	text-shadow: 3px 3px 10px #666666;
+}
+
+.cycle-slideshow { 
+	width: 100%;
+	height: 550px; 
+	margin: 10px auto; 
+	padding: 0; 
+	position: relative;
+    background: url(http://malsup.github.com/images/spinner.gif) 50% 50% no-repeat;
+    overflow: hidden;
+
+ }
+
+/* slideshow images (for most of the demos, these are the actual "slides") */
+.cycle-slideshow img { 
+    /* 
+    some of these styles will be set by the plugin (by default) but setting them here
+    helps avoid flash-of-unstyled-content
+    */
+    position: absolute; top: 0; left: 0;
+    width: 100%; height: auto; padding: 0; display: block;
+}
+
+/* in case script does not load */
+.cycle-slideshow img:first-child {
+    position: static; z-index: 100;
+}
+
+/* pager */
+.cycle-pager { 
+    text-align: center; width: 100%; z-index: 500; position: absolute; top: 10px; overflow: hidden;
+}
+.cycle-pager span { 
+  	font-size: 50px; width: 15px; height: 100px; 
+    display: inline-block; color: #ddd; cursor: pointer; 
+    background-image: url(img/slide-pager.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.cycle-pager span.cycle-pager-active { background-image: url(img/slide-pager-active.png);}
+.cycle-pager > * { cursor: pointer;}
+
+
+/* caption */
+.cycle-caption { position: absolute; color: white; bottom: 15px; right: 15px; z-index: 700; }
+
+
+/* overlay */
+.cycle-overlay { 
+    position: absolute; top: 35%; width: 100%; z-index: 600;
+   	color: white; padding: 15px;
+   	width: 80%;
+   	margin-left: 10%;
+   	margin-right: 10%;
+   	margin-top: -50px;
+
+}
+
+
+/* prev / next links */
+.cycle-prev, .cycle-next { position: absolute; top: 0; width: 30%; opacity: 0; filter: alpha(opacity=0); z-index: 800; height: 100%; cursor: pointer; }
+.cycle-prev { left: 0;  background: url(http://malsup.github.com/images/left.png) 50% 50% no-repeat;}
+.cycle-next { right: 0; background: url(http://malsup.github.com/images/right.png) 50% 50% no-repeat;}
+.cycle-prev:hover, .cycle-next:hover { opacity: .7; filter: alpha(opacity=70) }
+
+.disabled { opacity: .5; filter:alpha(opacity=50); }
+
+
+/* display paused text on top of paused slideshow */
+.cycle-paused:after {
+    content: 'Paused'; color: white; background: black; padding: 10px;
+    z-index: 500; position: absolute; top: 10px; right: 10px;
+    border-radius: 10px;
+    opacity: .5; filter: alpha(opacity=50);
+}
+
+
+/* 
+    media queries 
+    some style overrides to make things more pleasant on mobile devices
+*/
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+    .cycle-slideshow { width: 200px;}
+    h1{
+    	font-size: 0.1rem!important;
+    }
+    .cycle-overlay { padding: 4px }
+    .cycle-caption { bottom: 4px; right: 4px }
+}
+}
+
+#home{
+	background-color: $orange;
+
+	.homeItems{
+		padding: 10px;
+
+		.innerContainer{
+		}
+	
+	}
+
+	.wrapper {
+	    position: relative;
+	    overflow: hidden;
+	    width: 100%;
+	    height: 250px; 
+	    border: 1px solid black;
+	}
+
+	#slide {
+	    position: absolute;
+	    right: -200px;
+	    width: 100%;
+	    background: blue;
+	    transition: 0.5s;
+	}
+
+	.wrapper:hover #slide {
+	    transition: 0.5s;
+	    right: 0;
+	}
+
+
+
+
+	.innerCcontainer {
+  cursor: pointer;
+  height: 250px;
+  perspective: 600;
+  position: relative;
+  width: 100%;
+		}
+		.card {
+		  height: 100%;
+		  position: absolute;
+		  transform-style: preserve-3d;
+		  transition: all 1s ease-in-out;
+		  width: 100%;
+		}
+		.card:hover {
+		  transform: rotateY(180deg);
+		}
+		.card .side {
+		  backface-visibility: hidden;
+		  border-radius: 6px;
+		  height: 100%;
+		  position: absolute;
+		  overflow: hidden;
+		  width: 100%;
+		}
+		.card .back {
+		  background: rgba(0,0,0,0.6);
+		  background-image: url(img/home-commercial.jpg);
+		  background-size: 100%;
+		  color: #0087cc;
+		  line-height: 150px;
+		  text-align: center;
+		  transform: rotateY(180deg);
+		}
+}
+

@@ -7,6 +7,8 @@
 @import 'testimonials';
 @import 'blog';
 @import 'contact';
+@import 'home';
+@import 'projects';
 
 body{
 	font-family: 'Montserrat', sans-serif;
@@ -40,7 +42,7 @@ h2{
 }
 
 h3{
-	font-style: 14px!important;
+	font-size: 1.3875rem;
 }
 
 h4{
@@ -98,6 +100,7 @@ a{
 			line-height: 20px; /* check your icon height */
 			background:url(img/phone-icon-grey.png)  center left no-repeat;
 			padding-left: 20px;
+			background-size: 14%;
 		} 
 
 		a[target="email"] {
@@ -105,6 +108,7 @@ a{
 			line-height: 10px; /* check your icon height */
 			background:url(img/email-icon-grey.png)  center left no-repeat;
 			padding-left: 20px;
+			background-size: 7%;
 		} 
 	}
 }
@@ -457,6 +461,9 @@ header #navigationContainer nav li.active:not(.has-form){
 	background-position: 3% 20%;
 
 }
+
+
+
 
 
 

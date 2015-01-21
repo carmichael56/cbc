@@ -1,0 +1,132 @@
+#projects{
+	
+	.projectItem{
+
+
+		h2{
+			margin-bottom: 10px;
+			padding-top: 10px;
+		}
+	}
+
+}
+
+#box    {  
+
+           box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45);
+          border-bottom:2px solid #fff;
+          border-right:2px solid #fff;
+          margin:5% auto 0 auto; 
+          background:url(img/project-item2.jpg);
+		  background-size:cover;
+		overflow:hidden;}
+
+#overlay    {  background:rgba(0,0,0,.75);
+               text-align:center;
+               padding:45px 0 66px 0;
+               opacity:0;
+               -webkit-transition: opacity .25s ease;
+		-moz-transition: opacity .25s ease;
+	
+	img{
+		width: 120px;
+	}
+}
+
+
+#box:hover #overlay {
+               opacity:1;
+           }
+
+#plus       {  font-family:Helvetica;
+               font-weight:900;
+               color:rgba(255,255,255,.85);
+               font-size:96px;
+           }
+
+#projectsSubpage{
+	.chevronTitle{
+		margin-top: 20px;
+		padding-top: 13px;
+	}
+}
+
+#projectsFull{
+
+	.chevronTitle{
+		padding-bottom: 20px;
+	}
+
+	h3{
+		font-size: 16px;
+		line-height: 1rem;
+	}
+
+	h4{
+		line-height: 1rem;
+		margin-bottom: 20px;
+	}
+
+	.projectDetails{
+		border-top: 2px solid $orange;
+		padding-top: 10px;
+		color: $orange;
+
+		h4{
+			margin-bottom: 5px;
+		}
+
+		ul{
+			li{
+				font-size: 12px;
+			}
+		}
+	}
+
+	.gallery{
+		li{
+			padding: 0px;
+			padding-left: 2px;
+			padding-right: 2px;
+		}
+
+		.projectItemImg #box{
+			margin-top: 0px;
+		}
+		#box    {  
+
+           box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45);
+          border-bottom:2px solid #fff;
+          border-right:2px solid #fff;
+          margin:2% auto 0 auto; 
+          background:url(img/project-item.jpg);
+		  background-size:cover;
+		overflow:hidden;}
+
+#overlay    {  background:rgba(0,0,0,.75);
+               text-align:center;
+               padding:0;
+               opacity:0;
+               -webkit-transition: opacity .25s ease;
+		-moz-transition: opacity .25s ease;
+	
+	img{
+		width: 120px;
+	}
+}
+
+
+#box:hover #overlay {
+               opacity:1;
+           }
+	}
+}
+
+.pageHeaderBig{
+	padding: 0 !important;
+	margin: 0 !important;
+	height: 650px;
+	background-color: $orange;
+	padding-top: 35px !important;
+}
+
